@@ -423,6 +423,6 @@ The code included in the "Example command to run the script" section should be a
 
 ## Academic misconduct reminder
 
-You are required to work on this assignment **individually**. You may discuss high level concepts with others in the class but all the work must be completed by you.
+You are required to work on this assignment in teams of no more than two. You may discuss high level concepts with others in the class but all the work must be completed by your team.
 
-Remember, DO NOT POST YOUR CODE PUBLICLY ON GITHUB! Any code found on GitHub that is not the base template you are given will be reported to SJA. If you want to sidestep this problem entirely, don't create a public fork and instead create a private repository to store your work.
+Remember, DO NOT POST YOUR CODE PUBLICLY ON GITHUB! If you want to sidestep this problem entirely, don't create a public fork and instead create a private repository to store your work.
