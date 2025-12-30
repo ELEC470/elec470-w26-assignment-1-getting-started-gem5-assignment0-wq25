@@ -3,7 +3,7 @@ Author: Mahyar Samani, Kaustav Goswami, Jason Lowe-Power
 Title: Getting started with gem5
 ---
 
-**Due on *January 15* 11:59 pm (PST)**: See [Submission](#submission) for details.
+**Due on *January 23* 11:59 pm (PST)**: See [Submission](#submission) for details.
 
 ## Table of Contents
 
