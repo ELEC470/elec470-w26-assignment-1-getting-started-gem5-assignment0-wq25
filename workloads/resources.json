@@ -1,0 +1,607 @@
+[
+    {
+        "category": "workload",
+        "id": "hello_world_workload",
+        "description": "A simple workload that prints 'Hello, World!'",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "riscv-hello",
+                "resource_version": "1.0.0"
+            }
+        }
+    },
+    {
+        "category": "binary",
+        "id": "mm-riscv",
+        "description": "A simple implementation of matrix multiplication in RISC-V with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul-basic/mm-riscv",
+        "md5sum": "286c8d5b8b67d04bdbeb72e65bf8c271"
+    },
+    {
+        "category": "binary",
+        "id": "mm-x86",
+        "description": "A simple implementation of matrix multiplication in x86 with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul-basic/mm-x86",
+        "md5sum": "9b5379a9ef6c169ebb4f15d1dcb592d9"
+    },
+    {
+        "category": "binary",
+        "id": "mm-arm",
+        "description": "A simple implementation of matrix multiplication in ARM with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul-basic/mm-arm",
+        "md5sum": "2a2862bcc5ee9b6d7a984ef1eced99ab"
+    },
+    {
+        "category": "workload",
+        "id": "matrix_multiply_riscv_run",
+        "description": "A workload that runs matrix multiplication in RISC-V with gem5 ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm-riscv",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["64"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "matrix_multiply_x86_run",
+        "description": "A workload that runs matrix multiplication in x86 with ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm-x86",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["64"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "matrix_multiply_arm_run",
+        "description": "A workload that runs matrix multiplication in ARM with ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm-arm",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["64"]
+        }
+    },
+    {
+        "category": "binary",
+        "id": "daxpy-riscv",
+        "description": "A simple implementation of daxpy in RISC-V",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/daxpy/daxpy",
+        "md5sum": "929f9f86b1d84ed009f96d54f8f3e8a0"
+    },
+    {
+        "category": "binary",
+        "id": "daxpy-gem5-riscv",
+        "description": "A simple implementation of daxpy in RISC-V with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/daxpy/daxpy-gem5",
+        "md5sum": "223d6b38ef1ece75beaecb825ea2c319"
+    },
+    {
+        "category": "workload",
+        "id": "daxpy_riscv_run",
+        "description": "A workload that runs daxpy in RISC-V",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "daxpy-riscv",
+                "resource_version": "1.0.0"
+            }
+        }
+    },
+    {
+        "category": "workload",
+        "id": "daxpy_riscv_gem5_run",
+        "description": "A workload that runs daxpy in RISC-V with gem5 ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "daxpy-gem5-riscv",
+                "resource_version": "1.0.0"
+            }
+        }
+    },
+    {
+        "category": "binary",
+        "id": "queens-riscv",
+        "description": "A simple implementation of the N-Queens problem in RISC-V with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/queens/queens",
+        "md5sum": "f51e1ea5bd17e55511da80e25be24880"
+    },
+    {
+        "category": "workload",
+        "id": "queens_riscv_run",
+        "description": "A workload that runs the N-Queens problem in RISC-V with gem5 ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "queens-riscv",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["18"]
+        }
+    },
+    {
+        "category": "binary",
+        "id": "bfs-riscv",
+        "description": "A simple implementation of Breadth-First Search in RISC-V with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/bfs/bfs",
+        "md5sum": "d6aca9e873ef826f8e89ec19fc2d272f"
+    },
+    {
+        "category": "workload",
+        "id": "bfs_riscv_run",
+        "description": "A workload that runs Breadth-First Search in RISC-V with gem5 ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "bfs-riscv",
+                "resource_version": "1.0.0"
+            }
+        }
+    },
+    {
+        "category": "binary",
+        "id": "bfs-bubble-riscv",
+        "description": "A simple implementation of bubble sort in RISC-V with gem5 ROI annotations",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/bubble/bubble",
+        "md5sum": "54594a19d993c0e21e8206d94ee24fd3"
+    },
+    {
+        "category": "workload",
+        "id": "bubble_riscv_run",
+        "description": "A workload that runs bubble sort in RISC-V with gem5 ROI annotations",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "bfs-bubble-riscv",
+                "resource_version": "1.0.0"
+            }
+        }
+    },
+    {
+        "category": "suite",
+        "id": "comparch-benchmarks",
+        "description": "A suite of benchmarks for computer architecture 154B/201A at UC Davis",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "workloads": [
+            {
+                "id": "matrix_multiply_riscv_run",
+                "resource_version": "1.0.0",
+                "input_group": ["all"]
+            },
+            {
+                "id": "queens_riscv_run",
+                "resource_version": "1.0.0",
+                "input_group": ["all"]
+            },
+            {
+                "id": "bfs_riscv_run",
+                "resource_version": "1.0.0",
+                "input_group": ["all"]
+            },
+            {
+                "id": "bubble_riscv_run",
+                "resource_version": "1.0.0",
+                "input_group": ["all"]
+            }
+        ]
+    },
+    {
+        "category": "binary",
+        "id": "mm_ijk",
+        "description": "A simple implementation of matrix multiplication in C with IJK loop ordering",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul/mm-ijk-gem5",
+        "md5sum": "00a154568502a58bf44a1eaebe218635"
+    },
+    {
+        "category": "binary",
+        "id": "mm_ikj",
+        "description": "A simple implementation of matrix multiplication in C with IKJ loop ordering",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul/mm-ikj-gem5",
+        "md5sum": "adb92a0c5bc5ed5a97f4613b64527223"
+    },
+    {
+        "category": "binary",
+        "id": "mm_block_ij",
+        "description": "A simple implementation of matrix multiplication in C with block IJ loop ordering",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul/mm-block-ij-gem5",
+        "md5sum": ""
+    },
+    {
+        "category": "binary",
+        "id": "mm_block_ik",
+        "description": "A simple implementation of matrix multiplication in C with block IK loop ordering",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul/mm-block-ik-gem5",
+        "md5sum": ""
+    },
+    {
+        "category": "binary",
+        "id": "mm_block_jk",
+        "description": "A simple implementation of matrix multiplication in C with block KJ loop ordering",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/matmul/mm-block-jk-gem5",
+        "md5sum": ""
+    },
+    {
+        "category": "workload",
+        "id": "mm_ijk_run",
+        "description": "A workload that runs matrix multiplication in C with IJK loop ordering",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm_ijk",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["128"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "mm_ikj_run",
+        "description": "A workload that runs matrix multiplication in C with IKJ loop ordering",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm_ikj",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["128"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "mm_block_ij_run",
+        "description": "A workload that runs matrix multiplication in C with block IJ loop ordering",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm_block_ij",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["128", "8"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "mm_block_ik_run",
+        "description": "A workload that runs matrix multiplication in C with block IK loop ordering",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm_block_ik",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["128", "8"]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "mm_block_jk_run",
+        "description": "A workload that runs matrix multiplication in C with block KJ loop ordering",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "mm_block_jk",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["128", "8"]
+        }
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_naive",
+        "description": "A simple implementation of array sum in C with a naive parallelization strategy",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/naive-gem5",
+        "md5sum": "1e0431416f967fedc1271f53cd9bd981"
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_chunking",
+        "description": "A simple implementation of array sum in C with a chunking the input array",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/chunking-gem5",
+        "md5sum": "687250fbcdad903745f0621fa17a6212"
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_race_optimized",
+        "description": "A simple implementation of array sum in C without using the same result variable",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/res-race-opt-gem5",
+        "md5sum": "fc62d1f1d839e14b36850a9b65c284b6"
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_chunking_race_optimized",
+        "description": "A simple implementation of array sum in C with chunking the input array and without using the same result variable",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/chunking-res-race-opt-gem5",
+        "md5sum": "z6739b1d29034a7d467ea237baedc394f"
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_result_cache_optimized",
+        "description": "A simple implementation of array sum in C with a result variable for each thread in a different cache block",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/block-race-opt-gem5",
+        "md5sum": "880d59919521f24c555dddcb9bda673a"
+    },
+    {
+        "category": "binary",
+        "id": "array_sum_all_optimizations",
+        "description": "A simple implementation of array sum in C with all optimizations applied (chunking and cache block result variables)",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "url": "file:///workspaces/gem5-assignment-template/workloads/array_sum/all-opt-gem5",
+        "md5sum": "228ef3475113ec3570a34fbbd49d7af8"
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_naive_run",
+        "description": "A workload that runs array sum in C with a naive parallelization strategy",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_naive",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_chunking_run",
+        "description": "A workload that runs array sum in C with a chunking the input array",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_chunking",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_race_optimized_run",
+        "description": "A workload that runs array sum in C without using the same result variable",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_race_optimized",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_chunking_race_optimized_run",
+        "description": "A workload that runs array sum in C with chunking the input array and without using the same result variable",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_chunking_race_optimized",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_result_cache_optimized_run",
+        "description": "A workload that runs array sum in C with a result variable for each thread in a different cache block",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_result_cache_optimized",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    },
+    {
+        "category": "workload",
+        "id": "array_sum_all_optimizations_run",
+        "description": "A workload that runs array sum in C with all optimizations applied (chunking and cache block result variables)",
+        "function": "set_se_binary_workload",
+        "resource_version": "1.0.0",
+        "gem5_versions": [
+            "24.1"
+        ],
+        "resources": {
+            "binary": {
+                "id": "array_sum_all_optimizations",
+                "resource_version": "1.0.0"
+            }
+        },
+        "additional_params": {
+            "arguments": ["16384", 4]
+        }
+    }
+]
